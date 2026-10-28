@@ -306,6 +306,6 @@
 .hud .timer:not(:has(.rounds)):not(:has(.label))::after{content:"tempo";font:500 10px/1 var(--f-ui);color:var(--text-muted)}
 .ctile.on .mini::after{content:"";position:absolute;inset:0;border-radius:12px;box-shadow:inset 0 0 0 2px var(--btn-secondary-border);pointer-events:none}
 
-/* Jhon Games: logo da marca no centro do pano de todas as mesas */
+/* Jon Games: logo da marca no centro do pano de todas as mesas */
 .board .mesa::after{content:"";position:absolute;left:50%;top:47%;width:132px;height:132px;transform:translate(-50%,-50%);background:url(../assets/ui/logo-mark.svg) center/contain no-repeat;filter:brightness(0) invert(1);opacity:.1;pointer-events:none}
 .board .mesa[style*="mesa/truco-"]::after{top:41%}

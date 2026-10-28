@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 </head>
 <body>
-<title>Sinuca · Jhon Games</title>
+<title>Sinuca · Jon Games</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
 <style>
-/* Layout: one phone-sized app (375 logical width): lobby → fila → partida 3D (Three.js + física própria) → resultado. Tokens = DS Jhon Games (Apple Gamer Style), single dark look. */
+/* Layout: one phone-sized app (375 logical width): lobby → fila → partida 3D (Three.js + física própria) → resultado. Tokens = DS Jon Games (Apple Gamer Style), single dark look. */
 :root{
   color-scheme: dark;
   --page:#05080c; --bg:#19191b; --inset:#010101; --raised:#292a2e;
@@ -287,7 +287,7 @@ const STAKES = [{v:.25, q:154, tag:'Iniciante'}, {v:1, q:158}, {v:5, q:67}, {v:1
 const PEOPLE = [['dutra77','comandante','ele'],['rafa_10','piloto','ele'],['amanda.s','engenheiro','ela'],['lu.reis','explorador','ela'],['af_07','navegador','ele']];
 const BOT = {name:'dutra77', crew:'comandante', g:'ele'};
 const ST = {stake:1, saldo:1250, sound:true, mic:false, matches:0};
-// embedded in the main Jhon Games app: skip this lobby, report results/exit to the parent with postMessage
+// embedded in the main Jon Games app: skip this lobby, report results/exit to the parent with postMessage
 // #embed-<stake> or #embed=<stake>&nick=&crew=&g=&opp=&mesa=&q=0 (mesa = the app's table id, q=0 skips the queue)
 const EMBED = /^#embed/.test(location.hash), EP = {};
 if (EMBED) {
@@ -320,7 +320,7 @@ window.addEventListener('resize', fit);
 /* ---------- lobby ---------- */
 function show(id) { $('#scr-lobby').hidden = id !== 'lobby'; $('#scr-game').hidden = id !== 'game'; if (id === 'game') requestAnimationFrame(resize3d); }
 function renderHead() {
-  $('#head').innerHTML = `<img src="${A}ui/logo_icon.webp" alt="Jhon Games" style="width:30px;height:30px">
+  $('#head').innerHTML = `<img src="${A}ui/logo_icon.webp" alt="Jon Games" style="width:30px;height:30px">
     <button class="res" data-t="Carteira · fora do teste" aria-label="Saldo"><img src="${A}ui/banknote.webp" alt=""><span class="t"><span class="label">Saldo</span><b>${fmt(ST.saldo)}</b></span><span class="plus">+</span></button>
     <button data-t="Perfil · fora do teste" aria-label="Perfil" style="position:relative">${hex('nenhum', '', 44, 48)}<span class="avplus">+</span></button>
     <button class="res" data-t="Bônus · fora do teste" aria-label="Bônus"><img src="${A}ui/gift.webp" alt=""><span class="t"><span class="label">Bônus</span><b class="gold">R$ 35,00</b></span></button>

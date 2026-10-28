@@ -1,4 +1,4 @@
-/* Jhon Games · Loja: pacotes de skins → desbloqueado → escolher personagem → Home com skin; baralhos; recompensa */
+/* Jon Games · Loja: pacotes de skins → desbloqueado → escolher personagem → Home com skin; baralhos; recompensa */
 'use strict';
 const LOJA = {cat: 'skins'};
 const PRICE = 9.9;

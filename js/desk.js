@@ -1,4 +1,4 @@
-/* Jhon Games · desktop (computador com tela ≥ 1024 px na horizontal; celular e tablet ficam no layout mobile). As telas e os jogos seguem numa coluna 9:16 no meio;
+/* Jon Games · desktop (computador com tela ≥ 1024 px na horizontal; celular e tablet ficam no layout mobile). As telas e os jogos seguem numa coluna 9:16 no meio;
    o header vira um header largo, a navbar vira o menu da esquerda e o chat do jogo fica ao vivo na direita
    (em partida, vira o Chat da mesa). Entre 1024 e 1279 px o menu vira trilho e o chat volta a ser a aba Chat. */
 'use strict';
@@ -35,7 +35,7 @@ function dkFit() {
 /* ---------- header largo ---------- */
 function dkHeader() {
   const skin = hasSkin(), ob = !ST.onboarded || /^ob/.test(CUR || '');
-  return `<button class="brand" data-a="${ob ? 'noop' : 'home'}" aria-label="Início"><img src="${A}ui/logo_icon.webp" alt=""><b>Jhon<span>Games</span></b></button>
+  return `<button class="brand" data-a="${ob ? 'noop' : 'home'}" aria-label="Início"><img src="${A}ui/logo_icon.webp" alt=""><b>Jon<span>Games</span></b></button>
     <div class="mid"><button class="cpill" data-a="wallet" aria-label="Saldo">${ic('banknote')}<span class="t"><small>Saldo</small><b>${fmt2(ST.saldo)}</b></span><span class="plus">${svg('i-plus')}</span></button>
       <button class="cpill bonus" data-a="wallet" aria-label="Bônus">${ic('gift')}<span class="t"><small>Bônus</small><b>${fmt2(ST.bonus)}</b></span></button></div>
     <div class="right"><button class="hbell" data-a="notifs" aria-label="Notificações">${ic('bell')}<i ${ST.unread ? '' : 'hidden'}></i></button>

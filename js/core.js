@@ -1,4 +1,4 @@
-/* Jhon Games · núcleo: helpers, dados e estado. Scripts clássicos compartilham o escopo global (sem build). */
+/* Jon Games · núcleo: helpers, dados e estado. Scripts clássicos compartilham o escopo global (sem build). */
 'use strict';
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -25,7 +25,7 @@ const ROLE_SUB = {
 };
 // pacotes de skins da Loja · ordem de prioridade: Nobru & Inhui // Magia do bar // Reis do baralho // Estelar
 const PACKS = {
-  nobru: {name: 'Jhon Games', roles: ['gamer'], def: ['gamer', 'ele'], skins: 1, solo: true, caption: 'Jon Vlogs · 1 skin', incl: 'Jon Vlogs', artL: 'pack-nobru', artS: 'pack-nobru', posL: 'center', posS: 'center', mesa: null, page: 'Escolha seu personagem'},
+  nobru: {name: 'Jon Games', roles: ['gamer'], def: ['gamer', 'ele'], skins: 1, solo: true, caption: 'Jon Vlogs · 1 skin', incl: 'Jon Vlogs', artL: 'pack-nobru', artS: 'pack-nobru', posL: 'center', posS: 'center', mesa: null, page: 'Escolha seu personagem'},
   magia: {duo: true, name: 'Magia do bar', roles: ['bar'], def: ['bar', 'ele'], skins: 2, caption: 'Rei e Rainha do bar · 2 skins', incl: 'Rei e Rainha do bar', artL: 'pack-magia-l', artS: 'pack-magia-s', posL: 'center 20%', posS: 'center 12%', mesa: 'bar', page: 'Escolha seu personagem'},
   reis: {duo: true, name: 'Reis do baralho', roles: ['reis'], def: ['reis', 'ele'], skins: 2, caption: 'Rei e Rainha do baralho · 2 skins', incl: 'Rei e Rainha do baralho', artL: 'pack-reis-l', artS: 'pack-reis-s', posL: 'center 20%', posS: 'center 12%', mesa: 'reis', page: 'Escolha seu personagem'},
   estelar: {name: 'Estelar', roles: ['engenheiro', 'comandante', 'piloto', 'navegador', 'explorador'], def: ['navegador', 'ela'], skins: 10, caption: 'Tripulação espacial · 10 skins', incl: '5 tripulantes · Ele e Ela', artL: 'pack-estelar', artS: 'pack-estelar', posL: 'center 40%', posS: 'center 30%', mesa: null, page: 'Escolha seu tripulante'}

@@ -1,8 +1,8 @@
-# Jhon Games · protótipo navegável
+# Jon Games · protótipo navegável
 
-Versão da marca Jhon Games gerada a partir do protótipo EstrelaGames (`egames-tools/brandify.py`): cores do modo Jhon Games, logo, header, verso das cartas, pacote principal da Loja, vídeo de boas-vindas e mesa da sinuca na cor da marca com o logo ao centro.
+Versão da marca Jon Games gerada a partir do protótipo EstrelaGames (`egames-tools/brandify.py`): cores do modo Jon Games, logo, header, verso das cartas, pacote principal da Loja, vídeo de boas-vindas e mesa da sinuca na cor da marca com o logo ao centro.
 
-Protótipo mobile do **Jhon Games** (redesign *Apple Gamer Style*), fiel ao Figma e ao Design System Jhon Games. Todos os jogos liberados funcionam contra **bots**:
+Protótipo mobile do **Jon Games** (redesign *Apple Gamer Style*), fiel ao Figma e ao Design System Jon Games. Todos os jogos liberados funcionam contra **bots**:
 
 | Jogo | Modos |
 | --- | --- |
@@ -13,7 +13,7 @@ Protótipo mobile do **Jhon Games** (redesign *Apple Gamer Style*), fiel ao Figm
 | Poker | Texas Hold'em Sit & Go · 1x1 e mesa de 6 |
 | Sinuca | Bola 8 · 1x1 em mesa 3D (Brasileira em breve) |
 
-**Fluxo:** o app abre no cadastro (boas-vindas → celular → código → senha → apelido), **sem personagem**. A Loja desbloqueia os pacotes de skins (Jhon Games (Jon Vlogs), Magia do bar, Reis do baralho); ao embarcar, a aba **Jogos** vira a Home com o vídeo do personagem e as escolhas (avatar, mesa, baralho) passam para todos os jogos.
+**Fluxo:** o app abre no cadastro (boas-vindas → celular → código → senha → apelido), **sem personagem**. A Loja desbloqueia os pacotes de skins (Jon Games (Jon Vlogs), Magia do bar, Reis do baralho); ao embarcar, a aba **Jogos** vira a Home com o vídeo do personagem e as escolhas (avatar, mesa, baralho) passam para todos os jogos.
 
 **Batalhas:** lobby com busca e filtro por jogo, criação em 5 passos (jogo → modo e formato → rodadas 1/3/5/10 → buy-in → aberta ou fechada com senha), sala de espera que enche com bots e **série de partidas**: vence quem ganhar mais rodadas e leva o prêmio.
 
@@ -41,7 +41,7 @@ A Sinuca usa Three.js (carregado do jsDelivr), então precisa de internet.
 
 ```
 index.html        casca (telas são renderizadas pelos scripts)
-css/tokens.css    tokens do DS Jhon Games (cores, tipografia) resolvidos 1:1
+css/tokens.css    tokens do DS Jon Games (cores, tipografia) resolvidos 1:1
 css/ui.css        componentes (header-game, navbar-glass, game-block, tabs, button-glass, stake-pill, table-glass…)
 css/screens.css   telas (cadastro, lobby, Home com skin, Loja, Batalhas, Chat, Perfil, Ranking, Redirecionando…)
 css/game.css      tela de jogo (match-top, match-nav, cartas, chamada de truco, resultado)

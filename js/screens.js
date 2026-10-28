@@ -1,4 +1,4 @@
-/* Jhon Games · navegação, cadastro, Home/Lobby, fila e resultado */
+/* Jon Games · navegação, cadastro, Home/Lobby, fila e resultado */
 'use strict';
 const SCREENS = {}, ACT = {};
 let CUR = null, CURP = {}, HIST = [];

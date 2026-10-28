@@ -1,4 +1,4 @@
-/* Jhon Games · Chat, Notificações, Perfil, Histórico, Card do jogador, Ajustes, Fichas (redireciona) e Ranking */
+/* Jon Games · Chat, Notificações, Perfil, Histórico, Card do jogador, Ajustes, Fichas (redireciona) e Ranking */
 'use strict';
 
 /* ======================================================================
@@ -11,7 +11,7 @@ function seedFeed(gid) {
   const base = [
     {who: 'dutra77', c: 'comandante', g: 'ele', t: gid === 'truco' ? 'alguém pra um truco valendo R$ 5?' : `alguém pra ${doG(gameById(gid)) === 'da' ? 'uma' : 'um'} ${gn.toLowerCase()} valendo R$ 5?`},
     {who: 'af_07', c: 'piloto', g: 'ela', t: gid === 'truco' ? 'bora! mas no Mineiro' : 'bora!'},
-    {type: 'oficial', who: 'Jhon Games', t: `bônus no ar pra galera ${doG(gameById(gid))} ${gn}! Corre que é por ordem de chegada.`, bonus: {v: 5, left: 7, of: 10}},
+    {type: 'oficial', who: 'Jon Games', t: `bônus no ar pra galera ${doG(gameById(gid))} ${gn}! Corre que é por ordem de chegada.`, bonus: {v: 5, left: 7, of: 10}},
     {type: 'estrela', who: 'alfonso.dutra', c: 'navegador', g: 'ele', t: gid === 'truco' ? 'ganhei 5 seguidas no Paulista, tô on fire 🔥' : 'ganhei 5 seguidas hoje, tô on fire 🔥'},
     {who: 'luana.m', c: 'explorador', g: 'ela', t: 'quem topa uma partida depois?'},
     {who: 'dutra77', c: 'comandante', g: 'ele', t: 'entra aí na minha mesa 👇', table: {id: gameById(gid).pfx + '104', game: gid, v: 1, seats: '2/4'}},
